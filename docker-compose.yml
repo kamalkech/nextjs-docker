@@ -13,12 +13,13 @@ services:
       args:
         NODE_ENV: "production"
         BUILD_FLAG: ""
-    image: nextjs13-client:branche-name
+    image: marocdevelop/nextjs-docker:v2
     ports:
       - 3000:3000
     environment:
       NODE_ENV: "production"
       PORT: 3000
+      TAG: "name-of-branche"
     networks:
       - corp
     restart: on-failure
